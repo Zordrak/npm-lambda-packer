@@ -3,12 +3,12 @@ variable "package" {
 }
 
 variable "version" {
-  value = "*"
+  default = "*"
   description = "The version of the package"
 }
 
 variable "environment" {
-  value = ""
+  default = ""
   description = "Environment variables to use available"
 }
 
@@ -26,5 +26,5 @@ COMMAND
 }
 
 output "filepath" {
-  value = "${null_resource.runner.triggers.filepath}"
+  default = "${null_resource.runner.triggers.filepath}"
 }
