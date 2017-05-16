@@ -26,5 +26,5 @@ COMMAND
 }
 
 output "filepath" {
-  default = "${null_resource.runner.triggers.filepath}"
+  value = "${null_resource.runner.triggers.filepath}"
 }
